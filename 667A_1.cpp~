@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#define pi 3.14159265
+using namespace std;
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	double d,e,v,h,i,ans,t,vdrink,vrain,vini;
+	cin >> d >> h >> v >> e;
+	vdrink=v;
+	vrain=pi*d*d*e/4;
+	vini=pi*d*d*h/4;
+	cout << vrain << " " << vini  << endl;
+        t=(-1)*vini/(vdrink-vrain);
+	cout << t << endl;
+	if(t<=1000 && t>=0)
+		cout << "YES\n";
+	else
+		cout << "NO\n";
+	return 0;
+}
+		
